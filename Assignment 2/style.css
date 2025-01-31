@@ -1,0 +1,93 @@
+html {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.konkon {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    background-color: white;
+    padding: 20px;
+}
+
+.bottom-section {
+    background-color: #a9a9a9;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.gray-bottom {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 800px;
+    border-style: outset;
+}
+
+.gray-bottom h2 {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    background-color: #ffae42;
+    border-style: inset;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.gray-bottom p {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+span {
+    color: green;
+    font-weight: bolder;
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+    .top-section {
+      padding: 10px;
+    }
+    .bottom-section {
+      padding: 10px;
+    }
+    .gray-bottom {
+      padding: 10px;
+    }
+    .gray-bottom h2 {
+      font-size: 18px;
+    }
+    .gray-bottom p {
+      font-size: 14px;
+    }
+  }
+
+
+/* Media query for phones */
+@media (max-width: 480px) {
+.gray-bottom h2 {
+    font-size: 18px;
+  }
+  .gray-bottom p {
+    font-size: 14px;
+  }
+}
+
+  /* Media query for smaller phones */
+  @media (max-width: 320px) {
+    .gray-bottom h2 {
+      font-size: 16px;
+    }
+    .gray-bottom p {
+      font-size: 12px;
+    }
+  }

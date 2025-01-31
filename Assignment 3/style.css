@@ -1,0 +1,83 @@
+html {
+    font-family:'Segoe UI', sans-serif
+}
+
+body {
+    background-color: rgb(193, 170, 218);
+    margin: 100px;
+}
+
+.heading {
+    position: absolute;
+    left: 465px;
+    top: 112px;
+    background-color:beige;
+    padding: 0 0 0 5px;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.vessel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    width: 35vw;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    background-image: url(Novus\ watch.jpg);
+    background-size: 100% 60%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 20%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.vessel p{
+    text-align: left;
+}
+
+.vessel h2 {
+    text-align: left;
+}
+
+span {
+    color:gainsboro;
+}
+
+
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+    .heading {
+      left: 20px;
+      top: 20px;
+      font-size: 20px;
+    }
+    .vessel {
+      width: 80vw;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+  }
+
+/* Query for phones */
+@media (max-width: 480px) {
+    .heading {
+      left: 10px;
+      top: 10px;
+      font-size: 18px;
+    }
+    .vessel {
+      width: 90vw;
+      padding-top: 30px;
+      padding-bottom: 5px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }

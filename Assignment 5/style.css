@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('font/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('font/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'lato', sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.nav-buttons ul {
+    padding: 10px; 
+    margin: 10px; 
+}
+
+.nav-buttons ul a {
+    background-color: transparent;
+    color: black; 
+    padding: 10px 15px; 
+    border-radius: 3px; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+.nav-buttons ul a:hover {
+    background-color: rgb(51, 108, 169);  
+}
+
+.nav-buttons ul a span {
+    padding: 10px;
+    border: 1px solid black; 
+    border-radius: 5px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+}
+
+.logo-line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-below-logo {
+    border: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(74, 72, 72); 
+    margin-top: -25px;
+}
+
+.WP-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.WP-content {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 100vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.line-below-checkout {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    margin-bottom: 10px;
+    right: 0;
+    border: 0;
+    height: 0.3px;
+    background-color: rgb(232, 229, 229); 
+}
+
+.line-below-personal-info {
+    position: absolute;
+    left: 0;
+    top: 330px;
+    right: 0;
+    border: 0;
+    height: 0.3px;
+    background-color: rgb(232, 229, 229); 
+}
+
+.line-below-card {
+    position: absolute;
+    left: 0;
+    top: 480px;
+    right: 0;
+    border: 0;
+    height: 0.3px;
+    background-color: rgb(232, 229, 229); 
+}
+
+.line-above-comment {
+    border: 0;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.checkout-form input {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.form-together{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;  
+}
+
+.form-together div {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-alone {
+    margin-top: 20px; 
+}
+
+.checkout-card {
+    margin-top: 20px;
+    margin-bottom:20px;
+    border-radius: 5px;
+}
+
+.checkout-card input[type="num"] {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.checkout-button {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #5abd97; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-form h3::before,
+.checkout-card h3::before {
+    content: attr(data-step);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: rgb(120, 169, 194);
+    border: 2px solid #78a9c2;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(51, 108, 169); 
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    gap: 20px; 
+    padding: 20px;
+}
+
+.content-right .top ol {
+    list-style: none; 
+    padding: 0;
+}
+
+.content-right .top ol li {
+    margin-bottom: 15px; 
+    position: relative;
+    padding-left: 30px; 
+}
+
+.content-right .top ol li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    color: #9ee7cb;
+    background-color: transparent; 
+    border: 2px solid #9ee7cb; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar-sign {
+    color: #fff; 
+    font-size: 20px; 
+    vertical-align: top;
+}
+
+.little {
+    color: #fff; 
+    font-size: 20px; 
+}
+
+.top .custom {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bottom span {
+    text-align: center;
+    font-style: italic;
+}
+
+.bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.footer {
+    position: absolute;
+    bottom: -35%;
+    font-size: 14px;
+}
+
+.footer span {
+    color: rgb(51, 108, 169);
+}
+
+.stripe {
+    text-align: center;
+}
+
+.stripe button {
+    background-color: #b7bbbf;
+    border-radius: 3px;
+    border:  transparent;
+    padding: 5px;
+}
+
+.stripe span {
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+}
+
+.support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.support a {
+    font-weight: bold; 
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+
+.fas.fa-question-circle {
+    color: rgb(51, 108, 169); 
+    background-color: transparent;
+    font-size: 16px; 
+    margin-right: 7px;
+    vertical-align: middle; 
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.review-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+}
+
+
+/* Tab media queries */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-buttons ul {
+        margin: 10px 0;
+    }
+
+    .WP-container {
+        flex-direction: column;
+    }
+
+    .WP-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-left,
+    .content-right {
+        padding: 10px;
+    }
+}
+
+/* Phone media query */
+@media (max-width: 480px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-buttons ul {
+        margin: 5px 0;
+    }
+
+    .WP-container {
+        flex-direction: column;
+    }
+
+    .WP-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-left,
+    .content-right {
+        padding: 10px;
+    }
+
+    .checkout-form input,
+    .checkout-card input[type="num"] {
+        font-size: 14px;
+    }
+
+    .form-together {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
