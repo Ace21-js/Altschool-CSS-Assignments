@@ -209,20 +209,14 @@ body {
   .logo {
     position: relative;
     bottom: 0;
-    left: -100px;
+    left: 0;
     margin-bottom: 70px;
   }
 
   .form-container {
-    width: 100%;
+    width: 50%;
     margin: 10px;
     padding: 20px;
     box-shadow: none;
-  }
-
-  .form {
-    flex-direction: column;
-    width: 70%;
-    padding: 0;
   }
 }
