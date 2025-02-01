@@ -202,14 +202,14 @@ body {
 
   .signup p {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     word-spacing: normal;
   }
 
   .logo {
     position: relative;
     bottom: 0;
-    right: 150px;
+    left: 100px;
     margin-bottom: 90px;
   }
 
@@ -217,7 +217,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 50px;
     width: 90%;
     height: 40%;
     padding: 20px;
@@ -242,13 +242,6 @@ body {
     margin-bottom: 5px;
   }
 
-.form-item input, .form-item select {
-  padding: 10px;
-  font-size: 14px;
-  width: 100%;
-  box-sizing: border-box;
-  }
-
 .form-together {
   display: flex;
   flex-direction: column;
@@ -258,9 +251,9 @@ body {
   }
 
   .form-item input[type="text"], .form-item input[type="date"], .form-item select {
-    width: 100%; 
-    padding: 10px;
-    font-size: 14px;
-    box-sizing: border-box; 
-}
+  width: 100%; 
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box; 
+  }
 }
