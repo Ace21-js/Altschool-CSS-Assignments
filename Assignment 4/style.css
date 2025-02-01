@@ -207,13 +207,6 @@ box-sizing: border-box;
 }
 }
 
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Media query for phones */
 @media (max-width: 600px) {
 
@@ -244,7 +237,7 @@ box-sizing: border-box;
     position: relative;
     bottom: 0;
     left: -150px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
 
   .form-container {
