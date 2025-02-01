@@ -4,13 +4,13 @@ html {
 
 body {
   background-color: rgb(193, 170, 218);
-  margin: 100px;
+  margin: 50px;
 }
 
 .heading {
-  position: absolute;
-  left: 465px;
-  top: 112px;
+  position: relative;
+  left: 470px;
+  top: 55px;
   width: 200px;
   background-color:beige;
   padding: 0 0 0 5px;
@@ -21,13 +21,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 35vw;
+  width: 30%;
   margin: 0 auto;
   background-color: whitesmoke;
   background-image: url(Novus\ watch.jpg);
-  background-size: 100% 60%;
+  background-size: 100% 50%;
   background-position: top center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
   padding-top: 20%;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -48,38 +49,74 @@ span {
 }
 
 
-/* Media Queries for Tablets */
-@media (max-width: 768px) {
-  .heading {
-    left: 20px;
-    top: 20px;
-    font-size: 20px;
-    width: 200px; /* Add this to specify the width */
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  body {
+    margin: 20px;
   }
+
+  .heading {
+    left: 50px;
+    top: 20px;
+    width: 70%;
+    padding: 5px;
+    text-align: center;
+  }
+
   .vessel {
-    width: 80vw;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 30%;
+    background-size: 100% 30%;
+  }
+
+  .vessel h2, .vessel p {
+    text-align: center;
   }
 }
 
-/* Query for phones */
-@media (max-width: 480px) {
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    margin: 30px;
+  }
+
   .heading {
-    left: 10px;
-    top: 10px;
-    font-size: 18px;
-    width: 150px; /* Adjust the width for smaller screens */
+    left: 100px;
+    top: 30px;
+    width: 60%;
+    text-align: center;
   }
+
   .vessel {
-    width: 90vw;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    width: 80%;
+    padding: 15px;
+    padding-top: 25%;
+    background-size: 100% 40%;
   }
-  h2 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 14px;
+
+  .vessel h2, .vessel p {
+    text-align: center;
   }
 }
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+  body {
+    margin: 50px;
+  }
+
+  .heading {
+    left: 470px;
+    top: 55px;
+    width: 200px;
+  }
+
+  .vessel {
+    width: 30%;
+    padding: 20px;
+    padding-top: 20%;
+    background-size: 100% 
+  }
+}
+
