@@ -225,4 +225,28 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+.form-item label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+.form-item input, .form-item select {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  }
+
+.form-together {
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  }
 }
