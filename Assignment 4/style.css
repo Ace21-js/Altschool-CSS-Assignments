@@ -184,18 +184,20 @@ body {
 @media (max-width: 600px) {
 
   body {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
   }
+
   .main-box {
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .signup {
-    width: 90%;
+    width: 100%;
     text-align: left;
     margin-bottom: 10px;
+    margin-left: 10px;
   }
 
   .signup p {
@@ -207,18 +209,24 @@ body {
     position: relative;
     bottom: 0;
     left: -80px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 
   .form-container {
     width: 100%;
-    margin: 0;
+    margin: 10px;
     padding: 20px;
     box-shadow: none;
   }
 
   .form {
-    width: 100%;
+    width: 70%;
     padding: 0;
+  }
+
+  .form-together {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 }
