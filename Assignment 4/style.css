@@ -209,7 +209,7 @@ body {
   .logo {
     position: relative;
     bottom: 0;
-    left: 100px;
+    left: -30px;
     margin-bottom: 90px;
   }
 
@@ -217,7 +217,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 90%;
     height: 40%;
     padding: 20px;
@@ -252,8 +252,8 @@ body {
 
   .form-item input[type="text"], .form-item input[type="date"], .form-item select {
   width: 100%; 
-  padding: 10px;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 18px;
   box-sizing: border-box; 
   }
 }
