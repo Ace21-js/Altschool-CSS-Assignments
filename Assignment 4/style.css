@@ -217,7 +217,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 10px;
     padding: 20px;
     box-shadow: none;
   }
@@ -225,5 +224,11 @@ body {
   .form {
     display: flex;
     flex-direction: column;
+  }
+
+  .form-item input, .form-item select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
   }
 }
