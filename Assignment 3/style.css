@@ -56,18 +56,18 @@ span {
   }
 
   .heading {
-    left: 4px;
+    left: 2px;
     top: 45px;
-    width: 80%;
+    width: 40%;
     padding: 8px;
-    text-align: center;
+    text-align: left;
   }
 
   .vessel {
     width: 100%;
     padding: 10px;
     padding-top: 30%;
-    background-size: 100% 50%;
+    background-size: 100% 30%;
   }
 
   .vessel h2, .vessel p {
@@ -107,7 +107,7 @@ span {
   }
 
   .heading {
-    left: 470px;
+    left: 480px;
     top: 55px;
     width: 200px;
   }
@@ -116,7 +116,7 @@ span {
     width: 30%;
     padding: 20px;
     padding-top: 20%;
-    background-size: 100% 
+    background-size: 100% 50%;
   }
 }
 
