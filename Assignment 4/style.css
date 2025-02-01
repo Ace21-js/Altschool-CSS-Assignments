@@ -203,12 +203,13 @@ body {
   .signup p {
     width: 100%;
     margin-bottom: 15px;
+    word-spacing: normal;
   }
 
   .logo {
     position: relative;
     bottom: 0;
-    left: -80px;
+    left: -100px;
     margin-bottom: 70px;
   }
 
@@ -220,13 +221,8 @@ body {
   }
 
   .form {
+    flex-direction: column;
     width: 70%;
     padding: 0;
-  }
-
-  .form-together {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
   }
 }
