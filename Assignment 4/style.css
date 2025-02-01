@@ -221,10 +221,4 @@ body {
     width: 100%;
     padding: 0;
   }
-
-.form-together {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
 }
