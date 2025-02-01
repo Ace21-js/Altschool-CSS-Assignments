@@ -209,8 +209,8 @@ body {
   .logo {
     position: relative;
     bottom: 0;
-    right: 30px;
-    margin-bottom: 70px;
+    right: 150px;
+    margin-bottom: 90px;
   }
 
   .form-container {
@@ -256,4 +256,11 @@ body {
   margin-bottom: 10px;
   width: 100%;
   }
+
+  .form-item input[type="text"], .form-item input[type="date"], .form-item select {
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
 }
