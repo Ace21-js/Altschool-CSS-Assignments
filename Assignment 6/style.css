@@ -772,7 +772,7 @@ body {
     }
 
     .dom, .alias {
-        width: 70%;
+        width: 80%;
     }
 
     .buttons ul {
@@ -780,11 +780,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: -5px;
     }
 
     .form-container {
-        height: auto; 
         margin: 10px;
     }
 
@@ -796,6 +795,10 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .registration .top {
+        height: 80%;
     }
 
 }
