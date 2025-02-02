@@ -709,6 +709,10 @@ body {
         max-width: none; 
     }
 
+    .together {
+        width: 50%;
+    }
+
     .trim-url {
         display: block; 
         width: 100%; 
@@ -718,6 +722,7 @@ body {
     }
 
     .buttons {
+        margin: 0;
         text-align: center;
     }
 }
