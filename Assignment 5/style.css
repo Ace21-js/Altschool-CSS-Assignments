@@ -334,12 +334,12 @@ body {
 /* Tab media queries */
 @media (max-width: 768px) {
     .nav-buttons {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     .nav-buttons ul {
-        margin: 10px 0;
+        margin-top: 30px;
     }
 
     .WP-container {
@@ -352,7 +352,7 @@ body {
     }
 
     .content-right {
-        width: 100%;
+        width: 97%;
         margin-top: 20px;
     }
 
@@ -360,21 +360,45 @@ body {
     .content-right {
         padding: 10px;
     }
+
+    .checkout-form input, .checkout-card input[type="num"] {
+        font-size: 14px;
+        width: 97%;
+    }
+
+    .form-together {
+        width: 98.7%;
+    }
+
+    .checkout-button {
+        width: 95%;
+    }
+
+    .footer {
+        position: relative;
+        bottom: -10px;
+        text-align:center;
+    }
 }
 
 /* Phone media query */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .nav-buttons {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .nav-buttons ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         margin: 5px 0;
+        margin-top: 30px;
     }
 
     .WP-container {
         flex-direction: column;
+        margin: 15px;
     }
 
     .WP-content {
@@ -383,7 +407,7 @@ body {
     }
 
     .content-right {
-        width: 100%;
+        width: 96%;
         margin-top: 20px;
     }
 
@@ -395,10 +419,21 @@ body {
     .checkout-form input,
     .checkout-card input[type="num"] {
         font-size: 14px;
+        width: 97%;
+    }
+
+    .checkout-button {
+        width: 93%;
     }
 
     .form-together {
-        flex-direction: column;
+        width: 98%;
+    }
+
+    .footer {
+        position: relative;
+        bottom: -10px;
+        text-align:center;
     }
 }
 
