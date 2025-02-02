@@ -443,6 +443,14 @@ body {
     color:white;
 }
 
+.bottom img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;  
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
 .registration .bottom {
     position: relative;
     bottom: 350px;
@@ -790,26 +798,26 @@ body {
     }
 
     .buttons a span .left, .buttons a span .left  {
-        gap: -20px;
+        width: 50%;
     }
 
-    .form-container {
+    .form-content {
+        width: 100%;
         margin: 10px;
     }
 
     .select .trim-url {
         width: 40%;
-        margin-right: 60px;
         box-sizing: border-box;
     }
 
     .top img {
         justify-content: flex-start;
-        width: 80%;
+        width: 70%;
         max-width: 80%;
     }
 
-    .register h1, p {
-        width: 100%;
+    .register h1{
+        text-align: left;
     }
 }
