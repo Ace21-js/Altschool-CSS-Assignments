@@ -744,7 +744,7 @@ body {
         padding: 15px;
     }
     .vector {
-        left: 70%;
+        left: 85%;
         bottom: 50px;
     }
 
@@ -766,21 +766,20 @@ body {
         padding: 10px;
     }
 
-    .buttons .left, .right {
-        margin-left: 0;
-    }
-
     .form {
         width: 90%;
         max-width: none; 
     }
 
     .dom, .alias {
-        width: 90%;
+        width: 30%;
     }
 
     .buttons ul {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        margin-left: 30px;
     }
 
     .form-container {
