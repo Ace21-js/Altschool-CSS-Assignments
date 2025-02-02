@@ -791,6 +791,14 @@ body {
         width: 50%;
     }
 
+    .buttons .left {
+        margin: 0;
+    }
+
+    .buttons .right {
+        margin: 0;
+    }
+
     .form-content {
         width: 100%;
         margin: 10px;
