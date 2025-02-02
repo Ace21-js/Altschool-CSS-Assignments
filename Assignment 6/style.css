@@ -785,13 +785,12 @@ body {
 
     .buttons ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        gap: -30px;
     }
 
-    .buttons ul a {
-        gap: -30px;
+    .buttons a span .left, .buttons a span .left  {
+        gap: -20px;
     }
 
     .form-container {
@@ -808,5 +807,9 @@ body {
         justify-content: flex-start;
         width: 80%;
         max-width: 80%;
+    }
+
+    .register h1, p {
+        width: 100%;
     }
 }
