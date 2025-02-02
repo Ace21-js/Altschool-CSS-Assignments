@@ -779,7 +779,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: -5px;
+        gap: -15px;
     }
 
     .buttons ul a {
@@ -790,10 +790,7 @@ body {
         margin: 10px;
     }
 
-    .select .trim-url {
-        width: 40%;
-        margin-right: 20px;
-    }
+    
 
     .register h1 {
         position: relative;
