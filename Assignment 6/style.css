@@ -767,20 +767,23 @@ body {
     }
 
     .form {
-        width: 90%;
+        width: 100%;
         max-width: none; 
     }
 
     .dom, .alias {
-        width: 80%;
+        width: 50%;
     }
 
     .buttons ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: -5px;
+    }
+
+    .buttons ul a {
+        align-items: flex-start;
     }
 
     .form-container {
@@ -788,20 +791,16 @@ body {
     }
 
     .select .trim-url {
-        width: 60%;
+        width: 40%;
         margin-right: 20px;
     }
 
     .register h1 {
-        white-space: nowrap; 
-        overflow: hidden;
-        text-overflow: ellipsis;
+        position: relative;
     }
 
     .register p {
         display: block; 
-        margin-top: 10px; 
-        font-size: 20px;
     }
 
     .registration .top {
