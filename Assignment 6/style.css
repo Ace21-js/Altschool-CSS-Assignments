@@ -791,7 +791,7 @@ body {
     }
 
     .buttons ul a {
-        align-items: flex-start;
+        gap: -30px;
     }
 
     .form-container {
@@ -801,12 +801,12 @@ body {
     .select .trim-url {
         width: 40%;
         margin-right: 60px;
+        box-sizing: border-box;
     }
 
     .top img {
         justify-content: flex-start;
         width: 80%;
         max-width: 80%;
-        margin: 10px;
     }
 }
