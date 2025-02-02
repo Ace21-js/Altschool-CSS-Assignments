@@ -426,6 +426,14 @@ body {
     position: absolute;
 }
 
+.top img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;  
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
 .register {
     text-align: center;
     padding: 200px;
@@ -779,7 +787,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: -15px;
+        gap: -30px;
     }
 
     .buttons ul a {
@@ -790,18 +798,15 @@ body {
         margin: 10px;
     }
 
-    
-
-    .register h1 {
-        position: relative;
+    .select .trim-url {
+        width: 40%;
+        margin-right: 60px;
     }
 
-    .register p {
-        display: block; 
+    .top img {
+        justify-content: flex-start;
+        width: 80%;
+        max-width: 80%;
+        margin: 10px;
     }
-
-    .registration .top {
-        height: 60%;
-    }
-
 }
