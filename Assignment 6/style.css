@@ -731,42 +731,121 @@ body {
     /* Mobile devices */
 @media (max-width: 460px) {
     .nav-bar ul {
-        flex-direction: column;
-        margin-top: 20px;
-        margin-left: 0;
-        padding: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-left: 20px;
+        padding: 10px;
         text-align: center;
         gap: 2px;
     }
-
+    
     .nav-bar ul li a {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .second .last {
         margin-top: 20px;
     }
 
     .hero h1 {
-        font-size: 20px;
-        padding: 15px;
-    }
-    .vector {
-        left: 50%;
-        bottom: 30px;
+        font-size: 24px;
+        padding: 30px;
     }
 
-    .images,
-    .main-right img,
-    .FAQs img {
+    .vector {
+        left: 90%;
+        transform: translateX(-50%);
+        bottom: 60px;
+    }
+
+    .hero p {
+        margin-top: -40px;
+    }
+
+    .images {
+        justify-content: center;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .stats-main {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: flex-start;
         width: 100%;
-        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .features h2::before {
+        width: 10px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .main-right img {
+        justify-content: center;
+        width: 90%;
+        max-width: 95%;
     }
 
     .pricetags, .first-price, .second-price, .third-price {
-        margin: 5px;
-        gap: 2px;
+        flex-direction: column;
+        margin: 10px;
+        gap: 5px;
     }
 
-    .FAQ-container,
-    .form-container {
+    .FAQ-container {
+        margin: 20px;
+    }
+
+    .FAQs img {
+        justify-content: center;
+        width: 90%;
+        max-width: 90%;
         margin: 10px;
-        padding: 10px;
+    }
+
+    .form-container {
+        height: auto; 
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .design-1, .design-2 {
+        display: none; 
+    }
+
+    .form-content {
+        width: 100%;
+        max-width: none; 
+    }
+
+    .together {
+        width: 50%;
+    }
+
+    .trim-url {
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+
+    .buttons {
+        margin: 0;
+        text-align: center;
     }
 }
