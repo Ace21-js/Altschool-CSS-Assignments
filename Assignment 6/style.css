@@ -775,16 +775,11 @@ body {
         max-width: none; 
     }
 
-    .together select, .together input {
-        width: 50%;
-    }
-
-    .trim-url {
-        display: block; 
-        width: 50%; 
-        text-align: center; 
-        padding: 10px; 
-        box-sizing: border-box;
+    .form-container {
+        height: auto; 
+        width: 80%;
+        padding: 20px;
+        margin: 10px;
     }
 
 }
