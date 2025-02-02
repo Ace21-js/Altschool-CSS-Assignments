@@ -153,8 +153,9 @@ body {
 
 .images {
     background-color:#FCFAFA;
-    text-align: center;
-    overflow: hidden; 
+    text-align: center; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .images img {
@@ -162,6 +163,8 @@ body {
     height: auto;
     display: inline-block; 
     margin: 10px; 
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .stats-main {
@@ -180,7 +183,7 @@ body {
 }
 
 .stats span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     display: block;
 }
@@ -202,6 +205,15 @@ body {
     height: 40px; 
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.main-right img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; 
+    margin: 10px; 
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .main span {
@@ -365,6 +377,7 @@ body {
     border-radius: 40px;
     color: white;
     background-color: #0065FE;
+    width: 100%;
     padding: 20px 155px;
     margin-top: 20px;
     font-weight: lighter;
@@ -379,6 +392,15 @@ body {
 .FAQ-container {
     margin-top: 100px;
     text-align: center;
+}
+
+.FAQS img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; 
+    margin: 10px; 
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .faq {
@@ -432,6 +454,25 @@ body {
     margin-top: 50px;
 }
 
+.socials img {
+    max-width: 90%;
+    height: auto;
+    display: inline-block; 
+    margin: 10px; 
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.shortcuts img {
+    max-width: 90%;
+    height: auto;
+    display: inline-block; 
+    margin: 10px; 
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+
 .top-footer {
     display: flex;
     flex-direction: row;
@@ -447,52 +488,142 @@ body {
 /* Tablet devices */
 @media (max-width: 768px) {
     .nav-bar ul {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
         margin-left: 0;
-        gap: 10px;
+        padding: 10px;
+        text-align: center;
+        gap: -10px;
     }
     
     .nav-bar ul li a {
-        margin-top: 10px;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .nav-bar ul li a span {
+        margin-left: 20px;
+    }
+
+    .second .last {
+        margin-top: 20px;
     }
 
     .hero h1 {
-        font-size: 30px;
-        padding: 50px;
+        font-size: 28px; 
+        padding: 25px;
     }
 
     .vector {
-        left: 50%;
+        left: 90%;
         transform: translateX(-50%);
+        bottom: 50px;
+    }
+
+    .hero p {
+        margin-top: -20px;
+    }
+
+    .images {
+        justify-content: center;
+        width: 85%; 
+        max-width: 95%;
+    }
+
+    .stats-main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .features {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        text-align: center;
     }
 
     .features h2::before {
-        width: 15px;
-        height: 30px;
+        width: 12px;
+        height: 24px;
         margin-right: 5px;
+    }
+
+    .main-right img {
+        justify-content: center;
+        width: 95%; 
+        max-width: 95%;
     }
 
     .pricetags, .first-price, .second-price, .third-price {
         flex-direction: column;
-        gap: 20px;
+        margin: 10px;
+        gap: 10px; 
+    }
+
+    .FAQ-container {
+        margin: 20px;
+    }
+
+    .FAQs img {
+        justify-content: center;
+        width: 95%; 
+        max-width: 95%;
+        margin: 10px;
+    }
+
+    .form-container {
+        height: auto; 
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .design-1, .design-2 {
+        display: none; 
+    }
+
+    .form input, .form select{
+        width: 100%;
+        max-width: none; 
+    }
+
+    .trim-url {
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box;
     }
 }
 
+
 /* Mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .nav-bar ul {
-        flex-direction: column;
-        margin-left: 0;
-        gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-left: 20px;
+        padding: 10px;
+        text-align: center;
+        gap: 2px;
     }
     
     .nav-bar ul li a {
-        margin-top: 10px;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .second .last {
+        margin-top: 20px;
     }
 
     .hero h1 {
@@ -501,14 +632,37 @@ body {
     }
 
     .vector {
-        left: 50%;
+        left: 90%;
         transform: translateX(-50%);
-        bottom: 50px;
+        bottom: 60px;
+    }
+
+    .hero p {
+        margin-top: -40px;
+    }
+
+    .images {
+        justify-content: center;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .stats-main {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .features {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 
     .features h2::before {
@@ -517,14 +671,33 @@ body {
         margin-right: 5px;
     }
 
+    .main-right img {
+        justify-content: center;
+        width: 90%;
+        max-width: 95%;
+    }
+
     .pricetags, .first-price, .second-price, .third-price {
         flex-direction: column;
-        gap: 10px;
+        margin: 10px;
+        gap: 5px;
+    }
+
+    .FAQ-container {
+        margin: 20px;
+    }
+
+    .FAQs img {
+        justify-content: center;
+        width: 90%;
+        max-width: 90%;
+        margin: 10px;
     }
 
     .form-container {
         height: auto; 
         padding: 20px;
+        margin: 10px;
     }
 
     .design-1, .design-2 {
