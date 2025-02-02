@@ -770,14 +770,13 @@ body {
         margin-left: 0;
     }
 
-    .form-content {
+    .form {
         width: 80%;
         max-width: none; 
     }
 
     .form-container {
         height: auto; 
-        width: 80%;
         padding: 20px;
         margin: 10px;
     }
