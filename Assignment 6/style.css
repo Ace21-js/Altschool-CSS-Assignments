@@ -777,7 +777,7 @@ body {
 
     .buttons ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -789,7 +789,13 @@ body {
     }
 
     .select .trim-url {
-        width: 70%;
+        width: 60%;
+    }
+
+    .register {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
 }
