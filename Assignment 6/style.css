@@ -791,11 +791,12 @@ body {
         width: 50%;
     }
 
-    .buttons .left {
-        margin: 0;
-    }
-
-    .buttons .right {
+    .buttons ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
         margin: 0;
     }
 
