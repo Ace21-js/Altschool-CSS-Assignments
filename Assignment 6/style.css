@@ -708,4 +708,16 @@ body {
         width: 100%;
         max-width: none; 
     }
+
+    .trim-url {
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+
+    .buttons {
+        text-align: center;
+    }
 }
