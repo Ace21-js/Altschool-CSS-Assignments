@@ -793,11 +793,12 @@ body {
 
     .buttons ul {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: flex-start;
-        width: 100%;
         gap: 5px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .form-content {
