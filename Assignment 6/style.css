@@ -775,6 +775,10 @@ body {
         max-width: none; 
     }
 
+    .dom, .alias {
+        width: 50%;
+    }
+
     .form-container {
         height: auto; 
         padding: 20px;
