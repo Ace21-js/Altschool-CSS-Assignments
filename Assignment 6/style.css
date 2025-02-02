@@ -744,14 +744,14 @@ body {
         padding: 15px;
     }
     .vector {
-        left: 50%;
+        left: 70%;
         bottom: 50px;
     }
 
     .images,
     .main-right img,
     .FAQs img {
-        width: 100%;
+        width: 80%;
         max-width: 100%;
     }
 
@@ -766,12 +766,8 @@ body {
         padding: 10px;
     }
 
-    .trim-url {
-        display: block; 
-        width: 90%; 
-        text-align: center; 
-        padding: 10px; 
-        box-sizing: border-box;
+    .buttons .left, .right {
+        margin-left: 0;
     }
 
     .form-content {
@@ -779,8 +775,16 @@ body {
         max-width: none; 
     }
 
-    .together {
+    .together select, .together input {
         width: 50%;
+    }
+
+    .trim-url {
+        display: block; 
+        width: 50%; 
+        text-align: center; 
+        padding: 10px; 
+        box-sizing: border-box;
     }
 
 }
