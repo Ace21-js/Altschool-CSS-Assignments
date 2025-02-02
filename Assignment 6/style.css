@@ -606,7 +606,7 @@ body {
 
 
 /* Mobile devices */
-@media (max-width: 600px) {
+@media (min-width: 460px) and (max-width: 600px) {
     .nav-bar ul {
         flex-direction: row;
         flex-wrap: wrap;
