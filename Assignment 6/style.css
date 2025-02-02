@@ -789,16 +789,23 @@ body {
 
     .select .trim-url {
         width: 60%;
+        margin-right: 20px;
     }
 
-    .register {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .register h1 {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .register p {
+        display: block; 
+        margin-top: 10px; 
+        font-size: 20px;
     }
 
     .registration .top {
-        height: 80%;
+        height: 60%;
     }
 
 }
