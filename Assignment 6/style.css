@@ -793,14 +793,10 @@ body {
 
     .buttons ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
-    }
-
-    .buttons a span .left, .buttons a span .left  {
-        font-size: 12px;
-        width: 50%;
+        gap: 5px;
     }
 
     .form-content {
@@ -810,7 +806,6 @@ body {
 
     .select .trim-url {
         width: 30%;
-        box-sizing: border-box;
     }
 
     .top img {
@@ -822,6 +817,8 @@ body {
     .register h1, p{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         margin-bottom: 20px;
         width: 100%;
