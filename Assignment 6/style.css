@@ -771,12 +771,16 @@ body {
     }
 
     .form {
-        width: 80%;
+        width: 90%;
         max-width: none; 
     }
 
     .dom, .alias {
-        width: 50%;
+        width: 90%;
+    }
+
+    .buttons ul {
+        justify-content: center;
     }
 
     .form-container {
