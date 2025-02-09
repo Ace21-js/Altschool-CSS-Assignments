@@ -406,8 +406,12 @@ body {
         height: auto;
     }
 
+    .content-left {
+        width: 99%;
+    }
+
     .content-right {
-        width: 96%;
+        width: 99%;
         margin-top: 20px;
     }
 
