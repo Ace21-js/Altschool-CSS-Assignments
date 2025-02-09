@@ -411,7 +411,7 @@ body {
     }
 
     .content-right {
-        width: 99%;
+        width: auto;
         margin-top: 20px;
     }
 
